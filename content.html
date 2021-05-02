@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQ</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#btn1').click(function(){
+				$('#text1').text("New Text");
+			});
+			$('#btn2').click(function(){
+				$('#text2').html("New <i> Text</i>");
+			});
+			$('#btn3').click(function(){
+				$('#name').val("Saruu");
+			});
+		});
+	</script>
+</head>
+<body>
+	<p id="text1">Text line1</p>
+	<p id="text2">Text line2</p>
+	<p> Name: <input type="text" id="name" value="Neka"></p>
+	<button id="btn1">Reset Text</button>
+	<button id="btn2">Reset HTML</button>
+	<button id="btn3">Reset Value</button>
+</body>
+</html>
